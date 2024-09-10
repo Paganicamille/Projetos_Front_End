@@ -1,0 +1,13 @@
+/* footer.css */
+footer {
+    background-color: rgb(185, 0, 62);
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Diminuir o padding para reduzir a altura */
+    font-size: 0.9em; /* Tamanho de fonte menor para um rodapé mais compacto */
+    margin-top: 20px; /* Pequena margem superior para separação do conteúdo */
+}
+
+footer p {
+    margin: 0; /* Remove a margem interna para evitar aumentar a altura */
+}

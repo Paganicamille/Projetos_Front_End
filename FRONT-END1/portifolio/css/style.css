@@ -1,0 +1,267 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3e5f5; /* Lilás claro */
+    color: #eb058b; /* Roxo escuro */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    background-color: #eb058b; 
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 5px 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+
+main section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-top: 2px solid #eb058b; 
+}
+
+
+main img {
+    width: 200px; 
+    height: auto;
+    margin-top: 20px;
+    border: 4px solid #eb058b;
+}
+
+
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    flex-wrap: wrap;
+    gap: 10px; 
+    margin: 20px 0;
+}
+
+.flex-item {
+    text-align: center;
+    flex: 1;
+    max-width: 48%;
+    box-sizing: border-box; 
+}
+
+.flex-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 4px solid #eb058b;
+}
+
+
+footer {
+    background-color:#eb058b;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer ul li {
+    margin: 5px 15px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+@media (max-width: 600px) {
+    nav ul li, footer ul li {
+        margin: 5px 10px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-item {
+        max-width: 100%;
+        margin: 5px 0;
+    }
+
+    .flex-item img,
+    .flex-item video {
+        max-width: 80%; 
+    }
+
+    video {
+        max-height: 250px; 
+    }
+
+    main img {
+        width: 150px; 
+    }
+}
+
+
+section {
+    text-align: center;
+    padding: 20px;
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 5px; 
+}
+
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column; 
+    }
+}
+
+
+#estagio {
+    padding: 20px;
+    text-align: center;
+}
+
+#estagio h2 {
+    color: #4a148c;
+    margin-bottom: 20px;
+}
+
+
+#estagio .flex-container {
+    gap: 20px; 
+}
+
+#estagio .flex-item {
+    max-width: 22%; 
+}
+
+#estagio .flex-item img {
+    width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    #estagio .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #estagio .flex-item {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+#Contato {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #eb058b; 
+    border-radius: 8px; 
+    max-width: 600px; 
+    margin: auto;
+}
+
+
+#Contato label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #eb058b; 
+}
+
+
+#Contato input[type="text"],
+#Contato input[type="email"],
+#Contato textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #eb058b; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-bottom: 15px; 
+}
+
+
+#Contato button {
+    background-color:#eb058b;
+    color: #fff;
+    
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px; 
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#Contato button:hover {
+    background-color:#eb058b; /
+}
+
+
+#Contato table {
+    width: 100%;
+    border-collapse: separate; 
+    border-spacing: 0; 
+}
+
+#Contato td {
+    padding: 10px;
+}
+
+
+#Contato td[colspan="2"] {
+    text-align: center;
+}
+
+
+#AMIZADES img {
+    width: 200px; /* Defina um tamanho fixo para todas as imagens */
+    height: 200px; /* Ajuste a altura para corresponder ao tamanho desejado */
+    object-fit: cover; /* Garante que as imagens sejam cortadas corretamente e mantenham o foco principal */
+    margin: 10px; /* Adiciona espaço entre as imagens */
+}
